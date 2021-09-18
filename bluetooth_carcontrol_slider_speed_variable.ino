@@ -117,8 +117,8 @@ void loop() {
 void forward() {
   ledcWrite(0, Speed);
   ledcWrite(1, 0);
-  ledcWrite(pinRf, Speed);
-  ledcWrite(pinRb, 0);
+  ledcWrite(2, Speed);
+  ledcWrite(3, 0);
   
 }
 
