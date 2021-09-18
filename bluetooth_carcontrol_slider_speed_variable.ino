@@ -40,10 +40,10 @@ void setup() {
 
   //  Attach pins 
 
- ledcAttachPin(pinLf,0);
- ledcAttachPin(pinLb,1);
- ledcAttachPin(pinRf,2);
- ledcAttachPin(pinRb,3);
+ ledcAttachPin(pinLf,2);
+ ledcAttachPin(pinLb,4);
+ ledcAttachPin(pinRf,5);
+ ledcAttachPin(pinRb,12);
 
  // setup all the channlel
 
