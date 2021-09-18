@@ -40,10 +40,10 @@ void setup() {
 
   //  Attach pins 
 
- ledcAttachPin(pinLf,2);
- ledcAttachPin(pinLb,4);
- ledcAttachPin(pinRf,5);
- ledcAttachPin(pinRb,12);
+ ledcAttachPin(pinLf,0);
+ ledcAttachPin(pinLb,1);
+ ledcAttachPin(pinRf,2);
+ ledcAttachPin(pinRb,3);
 
  // setup all the channlel
 
@@ -87,6 +87,8 @@ void loop() {
       }
       if (outString.length() > 0) {
         Direction = outString;
+         Serial.print("Direction: ");
+        Serial.println(Direction);
         
       }
       // clear the string for new input:
@@ -107,8 +109,8 @@ void loop() {
   if (Direction == "r"){
           right();  
         }
-  Serial.println(Speed); 
-  Serial.println(Direction);      
+  //Serial.println(Speed); 
+  //Serial.println(Direction);      
     
 }
 
