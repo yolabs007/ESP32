@@ -1,0 +1,38 @@
+/* C++ code
+// writeen by Rahul Sgharma for Yolabs 
+// Date - 16th may 2022
+//  use pin number 26 
+// Ensure ServoESP32 library is installed  ot make it work
+*/
+
+#include <Servo.h>
+
+int personality = 0;
+
+Servo servo_6;
+
+void setup()
+{
+  servo_6.attach(26);
+}
+
+void loop()
+{
+  personality = random(1, 4 + 1);
+  if (personality == 1) {
+    servo_6.write(0);
+    delay(10000); // Wait for 10000 millisecond(s)
+  }
+  if (personality == 2) {
+    servo_6.write(60);
+    delay(10000); // Wait for 10000 millisecond(s)
+  }
+  if (personality == 3) {
+    servo_6.write(120);
+    delay(10000); // Wait for 10000 millisecond(s)
+  }
+  if (personality == 4) {
+    servo_6.write(180);
+    delay(10000); // Wait for 10000 millisecond(s)
+  }
+}
