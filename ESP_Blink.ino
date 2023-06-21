@@ -17,18 +17,18 @@
 */
 
 
- int LED_BUILTIN = 2; // declare the pin, please ensure pin numbedr matches to your inbuilt LED pin number 
+ int LED_BUILTIN1 = 2; // declare the pin, please ensure pin numbedr matches to your inbuilt LED pin number 
  
 // the setup function runs once when you press reset or power the board
 
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_BUILTIN1, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN1, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN1, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);                       // wait for a second
 }
