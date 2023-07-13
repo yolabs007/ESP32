@@ -1,14 +1,7 @@
-/* Move the Servo
-  Sweep a servo  from Zero to 180. Connect to any digital(PWM) pin and servo will rotate. 
-  Refer the diagram  for connection to servo  and ESP32
-  Connections 
-  Servo  -            ESP32 
-  Brown -             Ground
-  Red   -             3v3
-  Orange/Yellow  -    Digital pin - D4 in this code 
-  
-  NOTE : If your servo need to take a good load or if you are connecting multiple servo,  
-  you will  need external power supply with/without servo controller board               
+/* Brighten and Dim the LED
+  dim  the Inbuild LED pin - 2 - dim- brighter- dim 
+  No Connections Required - Inbuilt Pin(no-2) - change the pin numbers if you want to connect some external LEDs
+
   
   by Rahul Sharma for Yolabs 
   This example code is in the public domain.
