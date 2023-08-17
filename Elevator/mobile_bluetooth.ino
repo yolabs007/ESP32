@@ -1,4 +1,24 @@
+/*
 
+This code is written by Rahul Sharma for Yolabs 
+This code will  help you to use up, down and stop button to control your lift via dc motor and motor driver. 
+Hardware:
+ESP32 Development Board -dev kit v1 
+Mobile Phone - Android preffered 
+Motor Driver Module: e.g., L298N or L293D
+DC Motor
+Wiring: Jumper Wire 
+
+
+Motor Driver to ESP32 Connection
+
+Ground  --> GND of ESP32
+Input 1  --> D12
+Input 2  --> D13  
+
+if you want the effect to be opposite please swap D12 and D13 pins
+
+*/
 
 #include <BluetoothSerial.h>
 
