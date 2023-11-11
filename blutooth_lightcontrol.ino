@@ -32,7 +32,7 @@ void setup() {
   Serial.begin(115200);
   SerialBT.begin("ESP32yolabs"); //Bluetooth device name
   Serial.println("The device started, now you can pair it with bluetooth!");
-  pinMode(LED_BUILTIN,OUTPUT);    // decalre the pin as output pin
+  pinMode(LED_BUILTIN1,OUTPUT);    // decalre the pin as output pin
 }
 
 void loop() {
@@ -47,11 +47,11 @@ void loop() {
     
     if (receivedChar==turnON){
       Serial.println("i got one switch on the light");
-      digitalWrite(LED_BUILTIN,HIGH);
+      digitalWrite(LED_BUILTIN1,HIGH);
     }
     if (receivedChar==turnOFF){
       Serial.println("i got zero switch off the light");
-      digitalWrite(LED_BUILTIN,LOW);
+      digitalWrite(LED_BUILTIN1,LOW);
     }
     
   }
