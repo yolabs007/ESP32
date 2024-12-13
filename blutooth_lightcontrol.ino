@@ -19,7 +19,7 @@
 #include "BluetoothSerial.h"   // add the library to access bluetooth 
 
 BluetoothSerial SerialBT;  //give a short name to bluetooth serial 
-int LED_BUILTIN = 2;       // the pin you woud loke to control 
+int LED_BUILTIN1 = 2;       // the pin you woud loke to control 
 
 
 char receivedChar;      // store the char you received in this variable 
