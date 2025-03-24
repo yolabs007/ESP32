@@ -1,3 +1,19 @@
+/** Note: For Bluepad based code you need to have New board manager 
+called ESP32+Bluepad   for more info look here - https://bluepad32.readthedocs.io/en/latest/ 
+Quick Steps 
+1. Install the board manager -  esp32_bluepad
+2. select the right board maanger from tools --> its not arduino , not esp32, its esp32_bluepad 
+3. Now put this code in ESP32. 
+4. power on your controller and press share and playstation button(P) together. 
+5. controller will give quick flash white lite and after connected a blue light (no blinking)
+6. now left stick will control your vehicle.
+7. Note : this is written for  esp32 where pin-2 is connected to inbuilt led
+
+This code is written by - Rahul Sharma for Yolabs - 24th Mar'25 
+
+**/
+
+
 #include <Bluepad32.h>
 
 #define LED_PIN 2  // Output pin for the LED
