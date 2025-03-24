@@ -9,6 +9,8 @@ Quick Steps
 6. now left stick will control your vehicle.
 7. please check the pins if your vehicle is not working or not behaving well   
 
+This code is written by - Rahul Sharma for Yolabs - 24th Mar'25 
+
 **/
 #include <Bluepad32.h>
 
