@@ -78,8 +78,8 @@ void processGamepad(ControllerPtr ctl) {
   // Read left stick values:
   // axisY: typically -511 to 512 (pushing forward gives a negative value),
   // so we invert it to get a positive "forward" value.
-  int rawForward = ctl->axisX();
-  int rawTurn    = -ctl->axisY();
+  int rawForward = -ctl->axisX();
+  int rawTurn    =  ctl->axisY();
   
   // Scale the raw values from [-511, 512] to [-255, 255]
   float scale = 255.0 / 512.0;
